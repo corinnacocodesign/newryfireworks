@@ -55,7 +55,7 @@ window.NEWRY_PRODUCTS = [
   {id:"20960",name:"Alien Invasion",image:"https://www.myfireworks.co.uk/wp-content/uploads/2025/04/ALIEN-INVASION-TOP-ANGLE-copy.png",price:null},
   {id:"20122",name:"Terminator Pack",image:"https://www.myfireworks.co.uk/wp-content/uploads/2025/04/TERMINATOR-option3d-1LAYER-copy-2045x2048.png",price:null},
   {id:"20975",name:"Matrix Madness",image:"https://www.myfireworks.co.uk/wp-content/uploads/2021/03/Matrix-Madness-Low-Res-1024x373.jpg",price:null},
-  {id:"20130",name:"Storm Breaker",image:"https://www.myfireworks.co.uk/wp-content/uploads/2025/04/storm-breaker-option3d-1layer-copy-2048x2048.png",price:null}
+  {id:"20130",name:"Storm Breaker",image:"https://www.myfireworks.co.uk/wp-content/uploads/2025/04/storm-breaker-option3d-1layer-copy-2048x2048.png",price:null},
 
   {
     id:"181",

@@ -4,7 +4,7 @@ const products = window.NEWRY_PRODUCTS || [];
 
 function priceLabel(item) {
   return Number.isFinite(item.price)
-    ? `€${item.price.toFixed(2)}`
+    ? `£${item.price.toFixed(2)}``
     : 'Price in store';
 }
 

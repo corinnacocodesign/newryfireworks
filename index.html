@@ -6,6 +6,7 @@
   <meta name="description" content="Newry Fireworks — retail fireworks, wedding displays and unforgettable celebrations in Northern Ireland.">
   <title>Newry Fireworks | Retail, Weddings & Special Occasions</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="redesign.css">
 </head>
 <body>
 <main>
@@ -29,32 +30,124 @@
   </aside>
 
   <section class="hero" id="top">
-    <div class="hero-copy"><p class="eyebrow">Newry · Northern Ireland</p><h1>Fireworks for<br>life’s biggest<br>moments.</h1><span class="rule"></span><p class="lede">Shop retail fireworks in Newry, or plan an unforgettable display for your wedding or celebration.</p><div class="button-row"><a class="button" href="#shop">Shop fireworks</a><a class="outline-button" href="#weddings">Plan your event</a></div></div>
+    <div class="hero-copy">
+      <p class="eyebrow">Celebrate together · Newry</p>
+      <h1>Fireworks for<br><em>life’s biggest</em><br>moments.</h1>
+      <span class="rule"></span>
+      <p class="lede">Shop retail fireworks in Newry, or plan an unforgettable display for your wedding or celebration.</p>
+      <div class="button-row">
+        <a class="button" href="shop.html">Shop fireworks →</a>
+        <a class="outline-button" href="weddings.html">Plan your event</a>
+      </div>
+    </div>
     <div class="hero-image" role="img" aria-label="Newlyweds watching a golden firework display"></div>
   </section>
 
-  <div class="trust" id="safety"><span>Expert advice</span><b>•</b><span>Quality products</span><b>•</b><span>Licensed &amp; insured</span></div>
+  <div class="trust" id="safety">
+    <span>Expert advice</span><b>•</b>
+    <span>Quality products</span><b>•</b>
+    <span>Licensed &amp; insured</span>
+  </div>
 
   <section class="occasions section-dark" id="shop">
-    <div class="section-heading"><p class="eyebrow">Shop by occasion</p><h2>Make the night yours.</h2></div>
+    <div class="section-heading">
+      <p class="eyebrow">Shop by occasion</p>
+      <h2>Make the night yours.</h2>
+    </div>
+
     <div class="occasion-grid" id="occasions">
-      <article class="occasion-card"><a href="shop.html" aria-label="Explore family celebrations"><img src="assets/display.jpg" alt="Firework display above a local field"></a><h3>Family celebrations</h3><a class="arrow-link" href="shop.html">View shop <span>→</span></a></article>
-      <article class="occasion-card"><a href="weddings.html" aria-label="Explore weddings"><img src="assets/wedding-cake.jpg" alt="Newlyweds cutting their cake between firework fountains"></a><h3>Weddings</h3><a class="arrow-link" href="weddings.html">Explore <span>→</span></a></article>
-      <article class="occasion-card"><a href="shop.html" aria-label="Explore special occasions"><img src="assets/castle-fireworks.jpg" alt="Pink fireworks above a castle"></a><h3>Special occasions</h3><a class="arrow-link" href="shop.html">View shop <span>→</span></a></article>
+      <article class="occasion-card">
+        <a href="shop.html" aria-label="Explore family celebrations"><img src="assets/display.jpg" alt="Firework display above a local field"></a>
+        <h3>Family celebrations</h3>
+        <a class="arrow-link" href="shop.html">View shop <span>→</span></a>
+      </article>
+
+      <article class="occasion-card">
+        <a href="weddings.html" aria-label="Explore weddings"><img src="assets/wedding-cake.jpg" alt="Newlyweds cutting their cake between firework fountains"></a>
+        <h3>Weddings</h3>
+        <a class="arrow-link" href="weddings.html">Explore <span>→</span></a>
+      </article>
+
+      <article class="occasion-card">
+        <a href="shop.html" aria-label="Explore special occasions"><img src="assets/castle-fireworks.jpg" alt="Pink fireworks above a castle"></a>
+        <h3>Special occasions</h3>
+        <a class="arrow-link" href="shop.html">View shop <span>→</span></a>
+      </article>
     </div>
   </section>
 
-  <section class="wedding" id="weddings"><div class="wedding-copy"><p class="eyebrow">Wedding displays</p><h2>A wedding finale<br>they’ll never forget.</h2><span class="rule"></span><p>From intimate celebrations to show-stopping spectacles, we design and deliver breathtaking firework displays tailored to your day.</p><a class="outline-button light" href="mailto:info@newryfireworks.com?subject=Wedding%20display%20enquiry">Discover wedding displays</a></div><img src="assets/wedding-display.jpg" alt="A wide Newry Fireworks display lighting the night sky"></section>
+  <section class="featured-products" aria-labelledby="featured-title">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Our current range</p>
+        <h2 id="featured-title">Popular right now</h2>
+      </div>
+      <a class="featured-link" href="shop.html">View all products →</a>
+    </div>
+    <div class="featured-grid" data-featured-products></div>
+  </section>
 
-  <section class="about section-dark" id="about"><div class="about-image-wrap"><img src="assets/wedding-fair.jpg" alt="Newry Fireworks consultation stand at a wedding fair"></div><div class="about-copy"><p class="eyebrow">Meet the team</p><h2>Local knowledge.<br>Personal service.</h2><p>Visit us, talk through your celebration, and get straightforward advice from a team that knows fireworks inside out.</p><a class="arrow-link" href="mailto:info@newryfireworks.com">Start a conversation <span>→</span></a></div></section>
+  <section class="wedding" id="weddings">
+    <div class="wedding-copy">
+      <p class="eyebrow">Wedding displays</p>
+      <h2>A wedding finale<br>they’ll never forget.</h2>
+      <span class="rule"></span>
+      <p>From intimate celebrations to show-stopping spectacles, we design and deliver breathtaking firework displays tailored to your day.</p>
+      <a class="outline-button light" href="mailto:info@newryfireworks.com?subject=Wedding%20display%20enquiry">Discover wedding displays</a>
+    </div>
+    <img src="assets/wedding-display.jpg" alt="A wide Newry Fireworks display lighting the night sky">
+  </section>
+
+  <section class="about section-dark" id="about">
+    <div class="about-image-wrap"><img src="assets/wedding-fair.jpg" alt="Newry Fireworks consultation stand at a wedding fair"></div>
+    <div class="about-copy">
+      <p class="eyebrow">Meet the team</p>
+      <h2>Local knowledge.<br>Personal service.</h2>
+      <p>Visit us, talk through your celebration, and get straightforward advice from a team that knows fireworks inside out.</p>
+      <a class="arrow-link" href="mailto:info@newryfireworks.com">Start a conversation <span>→</span></a>
+    </div>
+  </section>
 
   <section class="visit" id="visit">
-    <div><p class="eyebrow">Open from late September</p><h2>Visit our Newry shop.</h2></div>
+    <div>
+      <p class="eyebrow">Open from late September</p>
+      <h2>Visit our Newry shop.</h2>
+    </div>
     <p><strong>108 Dublin Road, Newry, BT35 8QP</strong><br><span class="currency-note">Euro &amp; sterling accepted — € = £</span><br>Camlough shop open all year: 14 Old Road, Camlough, Newry, BT35 7JW<br><a href="tel:+447596229325">075 9622 9325</a></p>
     <a class="button" href="https://maps.google.com/?q=108+Dublin+Road+Newry+BT35+8QP" target="_blank" rel="noreferrer">Get directions</a>
   </section>
 
-  <footer><a class="brand" href="#top"><span class="spark-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span><strong>NEWRY</strong><small>FIREWORKS</small></span></a><div><a href="shop.html">Shop</a><a href="weddings.html">Weddings</a><a href="safety.html">Safety</a><a href="licence.html">Licence</a></div><div class="footer-contact"><a href="tel:+447596229325">075 9622 9325</a><span>108 Dublin Road, Newry, BT35 8QP</span></div><small>© 2026 Lakeside Camlough Ltd t/a Newry Fireworks.</small></footer>
+  <footer>
+    <a class="brand" href="#top"><span class="spark-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span><strong>NEWRY</strong><small>FIREWORKS</small></span></a>
+    <div><a href="shop.html">Shop</a><a href="weddings.html">Weddings</a><a href="safety.html">Safety</a><a href="licence.html">Licence</a></div>
+    <div class="footer-contact"><a href="tel:+447596229325">075 9622 9325</a><span>108 Dublin Road, Newry, BT35 8QP</span></div>
+    <small>© 2026 Lakeside Camlough Ltd t/a Newry Fireworks.</small>
+  </footer>
 </main>
+
+<script src="products.js"></script>
+<script>
+  const featuredIds = ['20610', '20618', '20057', '20059', '20960', '20130'];
+
+  const featuredProducts = featuredIds
+    .map(id => (window.NEWRY_PRODUCTS || []).find(product => product.id === id))
+    .filter(Boolean);
+
+  const featuredGrid = document.querySelector('[data-featured-products]');
+
+  if (featuredGrid) {
+    featuredGrid.innerHTML = featuredProducts.map(product => `
+      <article class="featured-card">
+        <a href="shop.html" aria-label="View ${product.name} in the shop">
+          <div class="featured-image">
+            <img src="${product.image}" alt="${product.name}" loading="lazy">
+          </div>
+          <h3>${product.name}</h3>
+          <strong>£${Number(product.price).toFixed(2)}</strong>
+        </a>
+      </article>
+    `).join('');
+  }
+</script>
 </body>
 </html>

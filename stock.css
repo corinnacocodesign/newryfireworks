@@ -5,3 +5,10 @@
   .product-visual.has-product-image{height:320px}
   .shop-notice{padding:20px}
 }
+.product-description {
+  color: #aaa9a5;
+  font-size: 13px;
+  line-height: 1.6;
+  min-height: 63px;
+  margin: 14px 0 0;
+}

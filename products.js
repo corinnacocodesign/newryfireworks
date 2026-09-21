@@ -57,3 +57,66 @@ window.NEWRY_PRODUCTS = [
   {id:"20975",name:"Matrix Madness",image:"https://www.myfireworks.co.uk/wp-content/uploads/2021/03/Matrix-Madness-Low-Res-1024x373.jpg",price:null},
   {id:"20130",name:"Storm Breaker",image:"https://www.myfireworks.co.uk/wp-content/uploads/2025/04/storm-breaker-option3d-1layer-copy-2048x2048.png",price:null}
 ];
+  {
+    id:"181",
+    name:"Zodiac",
+    brand:"Diamond Fireworks",
+    detail:"16-firework F2 selection box",
+    description:"A celestial-themed selection of 16 varied fireworks for a complete family celebration.",
+    image:"https://www.diamondfireworks.co.uk/product-images/181.jpg",
+    price:49
+  },
+  {
+    id:"182",
+    name:"Impulse",
+    brand:"Diamond Fireworks",
+    detail:"14-firework F3 selection box",
+    description:"A vibrant 14-piece selection designed to bring colour, energy and variety to larger celebrations.",
+    image:"https://www.diamondfireworks.co.uk/product-images/182.jpg",
+    price:120
+  },
+  {
+    id:"222",
+    name:"Thunder",
+    brand:"Diamond Fireworks",
+    detail:"10-pack of F2 rockets",
+    description:"Ten whistling rockets finishing with attention-grabbing bursts and bangs.",
+    image:"https://www.diamondfireworks.co.uk/product-images/222.jpg",
+    price:9.50
+  },
+  {
+    id:"224",
+    name:"Lunar",
+    brand:"Diamond Fireworks",
+    detail:"5-pack of F2 rockets",
+    description:"Five rockets producing bright, moon-inspired bursts across the night sky.",
+    image:"https://www.diamondfireworks.co.uk/product-images/224.jpg",
+    price:15
+  },
+  {
+    id:"267",
+    name:"Pulsar",
+    brand:"Diamond Fireworks",
+    detail:"2-pack of F3 ball rockets",
+    description:"Two powerful ball rockets delivering energetic flashes and large aerial effects.",
+    image:"https://www.diamondfireworks.co.uk/product-images/267.jpg",
+    price:58
+  },
+  {
+    id:"516",
+    name:"Angels Tears",
+    brand:"Diamond Fireworks",
+    detail:"36-shot F2 barrage · 20mm tubes",
+    description:"A graceful 36-shot barrage featuring cascading light effects across the sky.",
+    image:"https://www.diamondfireworks.co.uk/product-images/516.jpg",
+    price:45
+  },
+  {
+    id:"331",
+    name:"Firestorm",
+    brand:"Diamond Fireworks",
+    detail:"140-shot F2 Roman candle",
+    description:"A rapid 140-shot candle producing a continuous stream of colourful aerial effects.",
+    image:"https://www.diamondfireworks.co.uk/product-images/331.jpg",
+    price:11.25
+  }

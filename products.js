@@ -119,5 +119,5 @@ window.NEWRY_PRODUCTS = [
     description:"A rapid 140-shot candle producing a continuous stream of colourful aerial effects.",
     image:"https://www.diamondfireworks.co.uk/product-images/331.jpg",
     price:11.25
-  }
+  },
 ];

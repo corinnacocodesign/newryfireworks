@@ -21,3 +21,4 @@ Open `products.js` on GitHub and edit the product names, descriptions and prices
 - `weddings.html` — packages and wedding video
 - `safety.html` — firework safety code
 - `licence.html` — official Category F2 application link
+Website catalogue updated.

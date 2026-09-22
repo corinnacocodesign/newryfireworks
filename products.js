@@ -4,3 +4,18 @@ window.NEWRY_PRODUCTS.forEach(product => {
     product.image = `${product.image}?refresh=20260922`;
   }
 });
+const diamondImages = {
+  "Zodiac": "assets/zodiac.jpg",
+  "Impulse": "assets/impulse.jpg",
+  "Thunder Rockets": "assets/thunder.jpg",
+  "Lunar": "assets/lunar.jpg",
+  "Pulsar": "assets/pulsar.jpg",
+  "Angels Tears": "assets/angelstears.jpg",
+  "Firestorm": "assets/firestorm.jpg"
+};
+
+window.NEWRY_PRODUCTS.forEach(product => {
+  if (diamondImages[product.name]) {
+    product.image = diamondImages[product.name];
+  }
+});

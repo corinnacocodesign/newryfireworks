@@ -37,8 +37,16 @@ function render(items) {
         <strong>${priceLabel(item)}</strong>
 
         <a href="tel:+447596229325">
-          Check availability
-        </a>
+  Check availability
+</a>
+
+<button
+  class="draft-add-button"
+  type="button"
+  data-draft-add="${item.id}"
+>
+  Add to draft order
+</button>
       </div>
     </article>
   `).join('');

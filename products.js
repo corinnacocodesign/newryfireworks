@@ -10,7 +10,7 @@ const diamondImages = {
   "Thunder Rockets": "assets/thunder.jpg",
   "Lunar": "assets/lunar.jpg",
   "Pulsar": "assets/pulsar.jpg",
-  "Angels Tears": "assets/angelstears.jpg",
+  "Angels Tears": "assets/angeltears.jpg",
   "Firestorm": "assets/firestorm.jpg"
 };
 

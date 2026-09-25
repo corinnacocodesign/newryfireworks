@@ -1,1 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap');:root{--ink:#090b0b;--ivory:#f4f0e8;--paper:#faf8f3;--orange:#f06418;--orange-dark:#ce4e0d}body{background:var(--ink);font-family:"DM Sans",sans-serif;font-size:15px}h1,h2,h3,.brand strong,.sale-banner strong{font-family:"Oswald",sans-serif;font-style:normal;font-weight:700;text-transform:uppercase}.site-header{height:88px;padding-inline:clamp(22px,4vw,64px);border-bottom:1px solid rgba(255,255,255,.08);background:rgba(7,9,9,.98)}.brand{gap:13px}.brand strong{font-size:25px;letter-spacing:.02em}.brand small{margin-top:4px;color:var(--orange);font-size:8px;letter-spacing:.35em}.spark-mark{width:38px;height:38px;flex-basis:38px}.spark-mark::before,.spark-mark::after,.spark-mark i{height:38px}.desktop-nav{gap:clamp(22px,2.6vw,40px)}.desktop-nav a{position:relative;color:#f2f0eb;font-size:12px;font-weight:500;letter-spacing:0;text-transform:none}.desktop-nav a::after{content:"";position:absolute;right:0;bottom:-9px;left:0;height:2px;background:var(--orange);transform:scaleX(0);transform-origin:left;transition:transform .2s ease}.desktop-nav a:hover::after,.desktop-nav a[aria-current="page"]::after{transform:scaleX(1)}.button,.outline-button{min-height:48px;border-radius:2px;font-size:11px;letter-spacing:.07em}.button{background:var(--orange);border-color:var(--orange);color:#090b0b}.button:hover{background:#ff762d;border-color:#ff762d}.outline-button:hover{background:#fff;border-color:#fff;color:#090b0b}.sale-banner{background:var(--orange);color:#0a0b0b;box-shadow:none}.sale-banner>a{min-height:52px;padding-block:10px}.sale-label{border-color:rgba(0,0,0,.65)}.sale-banner>a>strong{font-size:clamp(18px,1.7vw,27px);letter-spacing:.01em}.sale-details{min-height:34px;background:#151717}.hero{min-height:610px;grid-template-columns:44% 56%;border-bottom:4px solid var(--ivory)}.hero-copy{padding:68px clamp(28px,4vw,66px);background:#090b0b}.hero h1{max-width:650px;font-size:clamp(59px,6.2vw,96px);line-height:.98;letter-spacing:-.035em}.hero h1 em{color:var(--orange);font-style:normal}.hero .rule{display:none}.hero .eyebrow{margin-bottom:20px;color:#ddd9d0}.lede{max-width:480px;margin-top:24px;font-size:16px;line-height:1.55}.button-row{margin-top:5px}.hero-image{min-height:610px;background-image:linear-gradient(90deg,#090b0b 0%,transparent 18%),url('assets/hero-wedding.jpg');background-position:center 45%}.trust{min-height:64px;gap:20px;border-color:rgba(255,255,255,.12);font-size:9px}.occasions{padding:0}.occasions .section-heading{padding:66px clamp(24px,4vw,64px) 28px;margin:0}.section-heading h2{font-size:clamp(38px,4vw,58px)}.occasion-grid{gap:4px}.occasion-card{position:relative;min-height:430px;overflow:hidden;background:#111}.occasion-card>a:first-child{position:absolute;inset:0}.occasion-card img{height:100%;filter:saturate(.82) contrast(1.06) brightness(.76)}.occasion-card::after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.9));pointer-events:none}.occasion-card h3,.occasion-card .arrow-link{position:absolute;z-index:2;left:28px}.occasion-card h3{right:24px;bottom:53px;margin:0;font-size:clamp(31px,3vw,46px)}.occasion-card .arrow-link{bottom:27px;margin:0;color:#fff}.featured-products{padding:70px clamp(24px,4vw,64px) 80px;background:var(--paper);color:#111}.featured-products .section-heading{margin-bottom:28px}.featured-products .eyebrow{margin:0 0 9px}.featured-products h2{color:#111;font-size:clamp(40px,4vw,58px)}.featured-link{color:#111;font-size:12px;font-weight:700}.featured-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px}.featured-card{min-width:0}.featured-card a{display:block}.featured-image{height:220px;margin-bottom:15px;background:#eee9df;overflow:hidden}.featured-image img{width:100%;height:100%;padding:16px;object-fit:contain;transition:transform .25s ease}.featured-card:hover img{transform:scale(1.035)}.featured-card h3{min-height:42px;color:#111;font-family:"DM Sans",sans-serif;font-size:13px;font-weight:700;line-height:1.3;text-transform:uppercase}.featured-card strong{display:block;margin-top:8px;color:#111;font-size:17px}.wedding{padding:0;grid-template-columns:48% 52%;gap:0;background:#090b0b;color:#fff}.wedding-copy{padding:68px clamp(28px,5vw,76px)}.wedding h2{font-size:clamp(47px,5vw,76px)}.wedding-copy>p:not(.eyebrow){color:#ccc9c2}.wedding .outline-button.light{color:#fff;border-color:#fff}.wedding>img{height:520px}.about{padding:78px clamp(24px,5vw,80px);gap:clamp(40px,7vw,100px)}.about h2,.visit h2{font-size:clamp(44px,4.5vw,68px)}.visit{padding:62px clamp(24px,5vw,80px);background:var(--ivory);color:#111;border:0}.visit .eyebrow{color:var(--orange-dark)}.visit>p{color:#4e4b46}.visit .currency-note{color:var(--orange-dark)}footer{padding-top:66px}.page-hero{min-height:440px;padding-block:86px;border-bottom:4px solid var(--orange)}.page-hero h1{max-width:850px;font-size:clamp(64px,8vw,118px);letter-spacing:-.035em}.shop-tools{background:var(--ivory);color:#111}.shop-tools label{color:var(--orange-dark);font-weight:700}.shop-tools input{background:#fff;border-color:#bdb8ae;color:#111}.product-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;background:var(--paper)}.product-card{border:0;background:#fff;color:#111;box-shadow:0 1px 0 #d8d3c9}.product-visual.has-product-image{height:280px;background:#eee9df}.product-visual.has-product-image span{background:var(--ink);color:var(--orange)}.product-body{padding:23px}.product-body h2{min-height:50px;color:#111;font-family:"DM Sans",sans-serif;font-size:19px;font-weight:700;line-height:1.25;text-transform:uppercase}.product-detail,.product-description{color:#68645e}.product-body strong,.product-body>a{color:var(--orange-dark)}.shop-notice{background:#e9e3d9;color:#4f4b45}.stock-summary{background:var(--orange);color:#090b0b}.licence-note,.video-section,.safety-content,.licence-panel{background:var(--ivory)}.package-grid article{border-color:rgba(255,255,255,.13);background:#111414}@media(max-width:1150px){.featured-grid{grid-template-columns:repeat(3,1fr)}.product-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:760px){.site-header{height:78px}.sale-banner>a{padding-block:14px}.hero{display:flex;flex-direction:column}.hero-image{min-height:430px;order:1;background-image:linear-gradient(0deg,#090b0b 0%,transparent 34%),url('assets/hero-wedding.jpg')}.hero-copy{order:2;padding:42px 22px 54px}.hero h1{font-size:clamp(51px,15vw,70px)}.occasion-grid{display:block}.occasion-card{min-height:400px;margin-bottom:4px}.featured-products{padding:56px 20px 64px}.featured-grid{grid-template-columns:repeat(2,1fr);gap:25px 12px}.featured-image{height:190px}.wedding{grid-template-columns:1fr}.wedding-copy{padding:58px 22px}.wedding>img{height:350px}.product-grid{grid-template-columns:1fr}.product-visual.has-product-image{height:340px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+/* CUSTOMER OFFERS SIGN-UP */
+
+.offers-signup {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(320px, 1.2fr);
+  gap: clamp(40px, 7vw, 100px);
+  align-items: center;
+  padding: clamp(70px, 9vw, 130px) clamp(24px, 6vw, 100px);
+  background: #111311;
+  color: #f4f0e7;
+}
+
+.offers-signup-copy {
+  max-width: 520px;
+}
+
+.offers-signup-copy h2 {
+  margin: 12px 0 24px;
+  color: #f4f0e7;
+  font-size: clamp(42px, 5vw, 72px);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.offers-signup-copy p:not(.eyebrow) {
+  max-width: 480px;
+  margin: 24px 0 16px;
+  color: rgba(244, 240, 231, 0.8);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.offers-signup-copy small {
+  color: rgba(244, 240, 231, 0.55);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.offers-signup .rule {
+  display: block;
+  width: 54px;
+  height: 2px;
+  background: #f36f21;
+}
+
+.offers-form {
+  width: 100%;
+  padding: clamp(16px, 3vw, 32px);
+  background: #f4f0e7;
+}
+
+.offers-form iframe {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  min-height: 520px;
+  margin: 0 auto;
+  border: 0;
+}
+
+@media (max-width: 800px) {
+  .offers-signup {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .offers-signup-copy h2 {
+    font-size: clamp(38px, 12vw, 56px);
+  }
+
+  .offers-form {
+    padding: 8px;
+  }
+
+  .offers-form iframe {
+    min-height: 620px;
+  }
+}

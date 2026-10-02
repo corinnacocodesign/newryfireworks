@@ -74,3 +74,60 @@
     height: 850px;
   }
 }
+/* PANDORA'S BOX BEST SELLER */
+.pandora-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 72px);
+  padding: clamp(48px, 7vw, 96px) clamp(20px, 6vw, 90px);
+  background: #f4f0e7;
+  color: #111311;
+}
+
+.pandora-copy h2 {
+  margin: 12px 0 20px;
+  font-size: clamp(36px, 4vw, 60px);
+  line-height: 1.05;
+}
+
+.pandora-copy > p:not(.eyebrow) {
+  max-width: 420px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.pandora-price {
+  display: block;
+  margin: 24px 0;
+  color: #c84b00;
+  font-size: 38px;
+}
+
+.pandora-copy small {
+  display: block;
+  max-width: 420px;
+  margin-top: 22px;
+  color: #595750;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.pandora-video {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #111311;
+}
+
+.pandora-video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 800px) {
+  .pandora-feature {
+    grid-template-columns: 1fr;
+  }
+}

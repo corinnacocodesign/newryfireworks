@@ -40,8 +40,8 @@ window.NEWRY_PRODUCTS.forEach(product => {
       id: "newry-pandora",
       name: "Pandora’s Box",
       brand: "Elite Fireworks",
-      detail: "905-shot barrage",
-      description: "A 905-shot Pandora’s Box barrage. Follow the instructions and safety distances printed on the product.",
+      detail: "96-shot barrage",
+      description: "A 96-shot Pandora’s Box barrage. Follow the instructions and safety distances printed on the product.",
       image: "assets/2.webp",
       price: 100
     },

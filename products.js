@@ -19,3 +19,86 @@ window.NEWRY_PRODUCTS.forEach(product => {
     product.image = diamondImages[product.name];
   }
 });
+/* October product and price update */
+(() => {
+  const products = window.NEWRY_PRODUCTS;
+
+  const updatedPrices = {
+    "20059": 60, // Mercury
+    "224": 15,  // Lunar
+    "516": 45   // Angels Tears
+  };
+
+  products.forEach(product => {
+    if (Object.hasOwn(updatedPrices, product.id)) {
+      product.price = updatedPrices[product.id];
+    }
+  });
+
+  const newProducts = [
+    {
+      id: "newry-pandora",
+      name: "Pandora’s Box",
+      brand: "Elite Fireworks",
+      detail: "905-shot barrage",
+      description: "A 905-shot Pandora’s Box barrage. Follow the instructions and safety distances printed on the product.",
+      image: "assets/2.webp",
+      price: 100
+    },
+    {
+      id: "newry-crackdown",
+      name: "Crackdown",
+      brand: "Bright Star Fireworks",
+      detail: "138-shot barrage",
+      description: "A 138-shot barrage from Bright Star Fireworks.",
+      image: "assets/4.jpg",
+      price: 220
+    },
+    {
+      id: "newry-screaming-wild-cats",
+      name: "Screaming Wild Cats",
+      brand: "Bright Star Fireworks",
+      detail: "Screaming Wild Cat range",
+      description: "Screaming Wild Cat from Bright Star Fireworks. Ask our team for advice on suitability for your display.",
+      image: "assets/3.webp",
+      price: 35
+    },
+    {
+      id: "newry-pearl-paradise",
+      name: "Pearl Paradise",
+      brand: "Bright Star Fireworks",
+      detail: "Pack of four Roman candles",
+      description: "A four-candle Pearl Paradise pack from Bright Star Fireworks.",
+      image: "assets/6.webp",
+      price: 22
+    },
+    {
+      id: "newry-solar",
+      name: "Solar Rockets",
+      brand: "Diamond Fireworks",
+      detail: "Rocket pack",
+      description: "Solar rocket pack from Diamond Fireworks. Ask our team for advice on suitability and licence requirements.",
+      image: "assets/7.png",
+      price: 100
+    },
+    {
+      id: "newry-horsemen",
+      name: "Four Horsemen of the Apocalypse",
+      brand: "Bad Boy Fireworks",
+      detail: "16-shot cake · £20 each",
+      description: "One 16-shot cake from the Four Horsemen range. The photo shows four designs; the price is for one cake.",
+      image: "assets/1.webp",
+      price: 20
+    }
+  ];
+
+  newProducts.forEach(product => {
+    const existing = products.find(item => item.id === product.id);
+
+    if (existing) {
+      Object.assign(existing, product);
+    } else {
+      products.push(product);
+    }
+  });
+})();

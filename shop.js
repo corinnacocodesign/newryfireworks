@@ -22,10 +22,7 @@ function render(items) {
       </div>
 
       <div class="product-body">
-        <p class="product-detail">
-          ${item.brand || 'Cosmic Fireworks'} ·
-          ${item.detail || `Product ${item.id}`}
-        </p>
+       
 
         <h2>${item.name}</h2>
 

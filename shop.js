@@ -72,3 +72,8 @@ search.addEventListener('input', event => {
 });
 
 render(products);
+const productCount = document.getElementById('product-count');
+
+if (productCount) {
+  productCount.textContent = products.length;
+}

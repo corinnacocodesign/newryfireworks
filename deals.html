@@ -1,1 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
+  <meta name="description" content="Browse current Newry Fireworks bundle deals at our Newry shop in Northern Ireland.">
+
+  <title>Fireworks Deals | Newry Fireworks</title>
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="inner.css">
+  <link rel="stylesheet" href="redesign.css">
+
+  <style>
+    .deals-hero {
+      padding: 90px clamp(24px,7vw,110px);
+      background: #0a0c0c;
+      border-bottom: 1px solid #292c2c;
+    }
+
+    .deals-hero h1 {
+      max-width: 850px;
+      margin: 10px 0 20px;
+      font-size: clamp(58px,8vw,112px);
+      line-height: .94;
+    }
+
+    .deals-hero h1 span {
+      color: #f06418;
+    }
+
+    .deals-hero > p:last-child {
+      max-width: 650px;
+      color: #c7c5bf;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .deals-grid {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 22px;
+      padding: 64px clamp(20px,5vw,76px);
+      background: #f4f0e8;
+      color: #101313;
+    }
+
+    .deal-card {
+      display: grid;
+      grid-template-columns: 46% 54%;
+      min-height: 380px;
+      background: #fff;
+      border: 1px solid #d9d3c8;
+      overflow: hidden;
+    }
+
+    .deal-card:last-child {
+      grid-column: 1 / -1;
+    }
+
+    .deal-image {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 300px;
+      padding: 28px;
+      background: #eee8de;
+    }
+
+    .deal-image img {
+      width: 100%;
+      height: 100%;
+      max-height: 310px;
+      object-fit: contain;
+    }
+
+    .deal-image.duo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .deal-image.duo img {
+      height: 260px;
+    }
+
+    .deal-badge {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      z-index: 2;
+      padding: 9px 12px;
+      background: #0a0c0c;
+      color: #f06418;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .deal-copy {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 34px;
+    }
+
+    .deal-copy small {
+      color: #cc4f0e;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .deal-copy h2 {
+      margin: 12px 0 14px;
+      font-size: clamp(29px,3vw,45px);
+      line-height: 1.02;
+    }
+
+    .deal-copy p {
+      margin: 0;
+      color: #655f57;
+      line-height: 1.65;
+    }
+
+    .deal-price {
+      margin: 24px 0 20px;
+      color: #0a0c0c;
+      font: 700 40px/1 "Oswald",sans-serif;
+    }
+
+    .deal-saving {
+      margin-left: 9px;
+      color: #cc4f0e;
+      font: 600 12px/1.2 "DM Sans",sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .deal-note {
+      padding: 44px clamp(20px,7vw,110px);
+      background: #151818;
+      color: #d6d3cd;
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    .deal-note strong {
+      color: #f06418;
+    }
+
+    @media(max-width:900px) {
+      .deals-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .deal-card,
+      .deal-card:last-child {
+        grid-column: auto;
+        grid-template-columns: 1fr;
+      }
+
+      .deal-image {
+        min-height: 260px;
+      }
+
+      .deal-copy {
+        padding: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<main>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="spark-mark" aria-hidden="true">
+        <i></i><i></i><i></i><i></i>
+      </span>
+
+      <span>
+        <strong>NEWRY</strong>
+        <small>FIREWORKS</small>
+      </span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="shop.html">Shop</a>
+      <a aria-current="page" href="deals.html">Deals</a>
+      <a href="weddings.html">Weddings</a>
+      <a href="safety.html">Safety</a>
+      <a href="licence.html">Licence</a>
+      <a href="index.html#visit">Location</a>
+    </nav>
+
+    <a class="outline-button compact" href="shop.html">
+      Shop the range
+    </a>
+
+    <details class="mobile-menu">
+      <summary aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </summary>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="deals.html">Deals</a>
+        <a href="weddings.html">Weddings</a>
+        <a href="safety.html">Safety</a>
+        <a href="licence.html">Licence</a>
+      </nav>
+    </details>
+  </header>
+
+  <section class="deals-hero">
+    <p class="eyebrow">Current bundle offers</p>
+
+    <h1>
+      MORE VALUE.<br>
+      <span>MORE WOW.</span>
+    </h1>
+
+    <p>
+      Explore our latest in-store bundles. Availability may change,
+      so please check with the Newry shop before travelling.
+    </p>
+  </section>
+
+  <section class="deals-grid" aria-label="Current fireworks deals">
+
+    <article class="deal-card">
+      <div class="deal-image">
+        <span class="deal-badge">Bundle deal</span>
+        <img src="assets/thunder.jpg" alt="Thunder rocket pack">
+      </div>
+
+      <div class="deal-copy">
+        <small>Rocket offer</small>
+        <h2>3 Thunder packs</h2>
+        <p>Three packs of Thunder rockets bundled together.</p>
+
+        <div class="deal-price">
+          £20 <span class="deal-saving">Save £8.50</span>
+        </div>
+
+        <a class="button" href="shop.html">View the shop</a>
+      </div>
+    </article>
+
+    <article class="deal-card">
+      <div class="deal-image">
+        <span class="deal-badge">Bundle deal</span>
+        <img src="assets/Earthquake.jpeg" alt="Earthquake rocket pack">
+      </div>
+
+      <div class="deal-copy">
+        <small>Rocket offer</small>
+        <h2>2 Earthquake packs</h2>
+        <p>Two five-rocket Earthquake packs for one bundle price.</p>
+
+        <div class="deal-price">
+          £15 <span class="deal-saving">Save £3</span>
+        </div>
+
+        <a class="button" href="shop.html">View the shop</a>
+      </div>
+    </article>
+
+    <article class="deal-card">
+      <div class="deal-image">
+        <span class="deal-badge">Bundle deal</span>
+        <img src="assets/ColourBomb.jpeg" alt="Colour Bomb rocket pack">
+      </div>
+
+      <div class="deal-copy">
+        <small>Rocket offer</small>
+        <h2>3 Colour Bomb packs</h2>
+        <p>Three colourful five-rocket packs bundled together.</p>
+
+        <div class="deal-price">
+          £20 <span class="deal-saving">Save £1</span>
+        </div>
+
+        <a class="button" href="shop.html">View the shop</a>
+      </div>
+    </article>
+
+    <article class="deal-card">
+      <div class="deal-image">
+        <span class="deal-badge">Bundle price</span>
+
+        <img
+          src="https://www.myfireworks.co.uk/wp-content/uploads/2018/09/20606-FAB-LR.jpg"
+          alt="FAB rocket pack"
+        >
+      </div>
+
+      <div class="deal-copy">
+        <small>Rocket bundle</small>
+        <h2>3 FAB rocket packs</h2>
+        <p>Three bumper FAB rocket packs for one bundle price.</p>
+
+        <div class="deal-price">£35</div>
+
+        <a class="button" href="shop.html">View the shop</a>
+      </div>
+    </article>
+
+    <article class="deal-card">
+      <div class="deal-image duo">
+        <span class="deal-badge">Family bundle</span>
+
+        <img
+          src="assets/zodiac.jpg"
+          alt="Zodiac family selection box"
+        >
+
+        <img
+          src="https://www.myfireworks.co.uk/wp-content/uploads/2022/02/super-hawk-v2.jpg"
+          alt="Super Hawk rocket pack"
+        >
+      </div>
+
+      <div class="deal-copy">
+        <small>Box and rockets</small>
+
+        <h2>
+          Zodiac family box + Super Hawk rockets
+        </h2>
+
+        <p>
+          A Zodiac family selection box paired with a Super Hawk rocket pack.
+        </p>
+
+        <div class="deal-price">
+          £90 <span class="deal-saving">Save £6</span>
+        </div>
+
+        <a class="button" href="shop.html">View the shop</a>
+      </div>
+    </article>
+
+  </section>
+
+  <section class="deal-note">
+    <strong>In-store offers.</strong>
+    Subject to availability. Prices shown in pounds; euro and sterling
+    accepted at € = £. Appropriate licensing and age restrictions apply.
+    Please follow every product’s instructions and safety distance.
+  </section>
+
+  <footer>
+    <a class="brand" href="index.html">
+      <span class="spark-mark" aria-hidden="true">
+        <i></i><i></i><i></i><i></i>
+      </span>
+
+      <span>
+        <strong>NEWRY</strong>
+        <small>FIREWORKS</small>
+      </span>
+    </a>
+
+    <div>
+      <a href="shop.html">Shop</a>
+      <a href="weddings.html">Weddings</a>
+      <a href="safety.html">Safety</a>
+      <a href="licence.html">Licence</a>
+    </div>
+
+    <div class="footer-contact">
+      <a href="tel:+447596229325">075 9622 9325</a>
+      <span>108 Dublin Road, Newry, BT35 8QP</span>
+    </div>
+
+    <small>
+      © 2026 Lakeside Camlough Ltd t/a Newry Fireworks.
+    </small>
+  </footer>
+
+</main>
+</body>
+</html>

@@ -148,15 +148,6 @@ window.NEWRY_PRODUCTS.forEach(product => {
   });
 })();
 const productVideos = {
-  "newry-pandora": "https://www.youtube.com/embed/86eNHfsp5iE"
-};
-
-window.NEWRY_PRODUCTS.forEach(product => {
-  if (productVideos[product.id]) {
-    product.video = productVideos[product.id];
-  }
-});
-const productVideos = {
   "Sonic Force": "https://www.youtube.com/embed/fAuKcbBHSpE",
   "Ground Shaker": "https://www.youtube.com/embed/s681sq-n81Y",
   "Crackdown": "https://www.youtube.com/embed/RWs_ItgQjIQ",
@@ -180,8 +171,8 @@ const productVideos = {
   "Neon Blast": "https://www.youtube.com/embed/M7wn4m55Sto",
   "Angels Tears": "https://www.youtube.com/embed/lIvQnrqcLPs",
   "Martian Attack": "https://www.youtube.com/embed/_s-Y2bHEaM0",
-  "God Of Thunder": "https://www.youtube.com/embed/-MbecI8C6hM"
-  "Pandora’s Box": "https://www.youtube.com/embed/86eNHfsp5iE",
+  "God Of Thunder": "https://www.youtube.com/embed/-MbecI8C6hM",
+  "Pandora’s Box": "https://www.youtube.com/embed/86eNHfsp5iE"
 };
 
 window.NEWRY_PRODUCTS.forEach(product => {

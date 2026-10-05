@@ -172,7 +172,7 @@ const productVideos = {
   "Angels Tears": "https://www.youtube.com/embed/lIvQnrqcLPs",
   "Martian Attack": "https://www.youtube.com/embed/_s-Y2bHEaM0",
   "God Of Thunder": "https://www.youtube.com/embed/-MbecI8C6hM",
-  "Pandora’s Box": "https://www.youtube.com/embed/86eNHfsp5iE"
+  "Pandora’s Box": "https://www.youtube.com/embed/86eNHfsp5iE",
 };
 
 window.NEWRY_PRODUCTS.forEach(product => {

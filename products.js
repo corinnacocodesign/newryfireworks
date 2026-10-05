@@ -90,7 +90,7 @@ window.NEWRY_PRODUCTS.forEach(product => {
       image: "assets/1.webp",
       price: 20
   },
-  {
+  
   {
     "id": "newry-colour-bombs",
     "name": "Colour Bombs",

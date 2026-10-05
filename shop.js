@@ -86,3 +86,77 @@ const productCount = document.getElementById('product-count');
 if (productCount) {
   productCount.textContent = products.length;
 }
+const videoModal = document.createElement('div');
+
+videoModal.className = 'product-video-modal';
+videoModal.hidden = true;
+
+videoModal.innerHTML = `
+  <div class="product-video-backdrop" data-video-close></div>
+
+  <section
+    class="product-video-panel"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Product video"
+  >
+    <button
+      class="product-video-close"
+      type="button"
+      data-video-close
+      aria-label="Close video"
+    >
+      ×
+    </button>
+
+    <p>Watch it in action</p>
+    <h2 data-video-title></h2>
+
+    <div class="product-video-frame">
+      <iframe
+        data-video-frame
+        title="Firework demonstration video"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <small>
+      Product demonstration video. Always follow the instructions
+      and safety distance printed on the product.
+    </small>
+  </section>
+`;
+
+document.body.append(videoModal);
+
+function closeProductVideo() {
+  videoModal.hidden = true;
+  videoModal.querySelector('[data-video-frame]').src = '';
+  document.body.classList.remove('video-modal-open');
+}
+
+document.addEventListener('click', event => {
+  const videoButton = event.target.closest('[data-product-video]');
+
+  if (videoButton) {
+    const frame = videoModal.querySelector('[data-video-frame]');
+    const title = videoModal.querySelector('[data-video-title]');
+
+    frame.src = `${videoButton.dataset.productVideo}?autoplay=1&rel=0`;
+    title.textContent = videoButton.dataset.productName;
+
+    videoModal.hidden = false;
+    document.body.classList.add('video-modal-open');
+  }
+
+  if (event.target.closest('[data-video-close]')) {
+    closeProductVideo();
+  }
+});
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && !videoModal.hidden) {
+    closeProductVideo();
+  }
+});

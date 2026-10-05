@@ -156,3 +156,36 @@ window.NEWRY_PRODUCTS.forEach(product => {
     product.video = productVideos[product.id];
   }
 });
+const productVideos = {
+  "Sonic Force": "https://www.youtube.com/embed/fAuKcbBHSpE",
+  "Ground Shaker": "https://www.youtube.com/embed/s681sq-n81Y",
+  "Crackdown": "https://www.youtube.com/embed/RWs_ItgQjIQ",
+  "Crossfire": "https://www.youtube.com/embed/dgZ8F-d2QW8",
+  "Quantum Leap": "https://www.youtube.com/embed/TWMxy2xSwg4",
+  "Flaming Phoenix": "https://www.youtube.com/embed/ERQgEJ6FLlI",
+  "Judgement Day": "https://www.youtube.com/embed/Cg5n0senFxo",
+  "Mutants Wrath": "https://www.youtube.com/embed/ln1g0MCfwIc",
+  "Atomic Warlord": "https://www.youtube.com/embed/khx_P7ui_RY",
+  "Dragon Fire": "https://www.youtube.com/embed/iLTeOAlxa6E",
+  "Phantom Menace": "https://www.youtube.com/embed/SSMczd4m9I0",
+  "Rampaging Warlord": "https://www.youtube.com/embed/OkNKWlVVZo8",
+  "Shadow Warrior": "https://www.youtube.com/embed/G1nUPwSgQuk",
+  "Gladiator": "https://www.youtube.com/embed/5BHUcg0EwbY",
+  "Emperors Wrath": "https://www.youtube.com/embed/WwxMoFySlPg",
+  "Alien Invasion": "https://www.youtube.com/embed/F4qs2bBzcek",
+  "Mardi Gras": "https://www.youtube.com/embed/GpUMbez3pxA",
+  "Terminator Pack": "https://www.youtube.com/embed/BhYT9RKvSpo",
+  "Matrix Madness": "https://www.youtube.com/embed/7mxI4fFwHRY",
+  "Storm Breaker": "https://www.youtube.com/embed/WYETToqhhZI",
+  "Neon Blast": "https://www.youtube.com/embed/M7wn4m55Sto",
+  "Angels Tears": "https://www.youtube.com/embed/lIvQnrqcLPs",
+  "Martian Attack": "https://www.youtube.com/embed/_s-Y2bHEaM0",
+  "God Of Thunder": "https://www.youtube.com/embed/-MbecI8C6hM"
+  "Pandora’s Box": "https://www.youtube.com/embed/86eNHfsp5iE",
+};
+
+window.NEWRY_PRODUCTS.forEach(product => {
+  if (productVideos[product.name]) {
+    product.video = productVideos[product.name];
+  }
+});

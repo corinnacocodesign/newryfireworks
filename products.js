@@ -91,6 +91,52 @@ window.NEWRY_PRODUCTS.forEach(product => {
       price: 20
     }
   ];
+  ,
+  {
+    "id": "newry-colour-bombs",
+    "name": "Colour Bombs",
+    "brand": "Bad Boy Fireworks",
+    "detail": "Five-rocket pack",
+    "description": "A five-rocket pack offering a colourful addition to a garden display. Follow the instructions and safety distances printed on the product.",
+    "image": "assets/ColourBomb.jpeg",
+    "price": 7
+  },
+  {
+    "id": "newry-earthquake",
+    "name": "Earthquake",
+    "brand": "Bad Boy Fireworks",
+    "detail": "Five-rocket pack",
+    "description": "A five-rocket pack designed to bring a varied mix of aerial effects to your display. Follow the instructions and safety distances printed on the product.",
+    "image": "assets/Earthquake.jpeg",
+    "price": 9
+  },
+  {
+    "id": "newry-smoking-aces",
+    "name": "Smoking Aces",
+    "brand": "Bright Star Fireworks",
+    "detail": "Four 8-shot Roman candles",
+    "description": "A four-pack of 8-shot Roman candles with assorted designs. Follow the pack instructions and stated safety distances.",
+    "image": "assets/smokingace.png",
+    "price": 40
+  },
+  {
+    "id": "newry-hot-8",
+    "name": "Hot 8",
+    "brand": "",
+    "detail": "8-shot cannon pack",
+    "description": "A pack of 8-shot cannons designed to add a lively sequence of aerial effects to your display. Follow the pack instructions and stated safety distances.",
+    "image": "assets/hot8.jpg",
+    "price": 55
+  },
+  {
+    "id": "newry-sky-storm",
+    "name": "Sky Storm",
+    "brand": "Astra Fireworks",
+    "detail": "Five twisty whistling rockets",
+    "description": "A five-pack of twisty whistling rockets from Astra Fireworks. Follow the instructions and safety distances printed on the product.",
+    "image": "assets/sky-storm.webp",
+    "price": 55
+  }
 
   newProducts.forEach(product => {
     const existing = products.find(item => item.id === product.id);

@@ -89,9 +89,8 @@ window.NEWRY_PRODUCTS.forEach(product => {
       description: "One 16-shot cake from the Four Horsemen range. The photo shows four designs; the price is for one cake.",
       image: "assets/1.webp",
       price: 20
-    }
-  ];
-  ,
+  },
+  {
   {
     "id": "newry-colour-bombs",
     "name": "Colour Bombs",
@@ -137,7 +136,7 @@ window.NEWRY_PRODUCTS.forEach(product => {
     "image": "assets/sky-storm.webp",
     "price": 55
   }
-
+];
   newProducts.forEach(product => {
     const existing = products.find(item => item.id === product.id);
 

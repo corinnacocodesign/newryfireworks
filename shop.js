@@ -40,7 +40,16 @@ function render(items) {
         <a href="tel:+447596229325">
   Check availability
 </a>
-
+${item.video ? `
+  <button
+    class="product-video-button"
+    type="button"
+    data-product-video="${item.video}"
+    data-product-name="${item.name}"
+  >
+    ▶ Watch video
+  </button>
+` : ''}
 <button
   class="draft-add-button"
   type="button"

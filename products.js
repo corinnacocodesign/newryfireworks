@@ -147,3 +147,12 @@ window.NEWRY_PRODUCTS.forEach(product => {
     }
   });
 })();
+const productVideos = {
+  "newry-pandora": "https://www.youtube.com/embed/86eNHfsp5iE"
+};
+
+window.NEWRY_PRODUCTS.forEach(product => {
+  if (productVideos[product.id]) {
+    product.video = productVideos[product.id];
+  }
+});

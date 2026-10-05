@@ -1,7 +1,11 @@
 const grid = document.querySelector('[data-product-grid]');
 const search = document.querySelector('[data-product-search]');
-const products = window.NEWRY_PRODUCTS || [];
+const products = [...(window.NEWRY_PRODUCTS || [])].sort((a, b) => {
+  const priceA = Number.isFinite(a.price) ? a.price : Infinity;
+  const priceB = Number.isFinite(b.price) ? b.price : Infinity;
 
+  return priceA - priceB || a.name.localeCompare(b.name);
+});
 function priceLabel(item) {
   return Number.isFinite(item.price)
     ? `£${item.price.toFixed(2)}`

@@ -204,7 +204,18 @@ const productVideos = {
 "Death Star": "https://www.youtube.com/embed/TBh4jms_8yM",
 "Power Force": "https://www.youtube.com/embed/x_K3Mt5NjqA",
 "Smoking Aces": "https://www.youtube.com/embed/3FL4FLw-jck",
-"Hot 8": "https://www.youtube.com/embed/hTA1y9wda3g"
+"Hot 8": "https://www.youtube.com/embed/hTA1y9wda3g",
+"Impulse": "https://www.youtube.com/embed/5azAD6wZB8o",
+"Solar Rockets": "https://www.youtube.com/embed/Ver9ayMjd8E",
+"Strikeforce": "https://www.youtube.com/embed/nVBt8KBP99w",
+"Black Gemini": "https://www.youtube.com/embed/PK3QGW9ielI",
+"Space Shuttle": "https://www.youtube.com/embed/KUaZnHs7bnE",
+"Sky Storm": "https://www.youtube.com/embed/mwoErGm2xus",
+"Pulsar": "https://www.youtube.com/embed/0fUuMMTTKj4",
+"Space Hawk": "https://www.youtube.com/embed/srucQwWfb64",
+"Super Hawk": "https://www.youtube.com/embed/etLVGYnUTGk",
+"Zodiac": "https://www.youtube.com/embed/6IE0fe6c1ro",
+"Star Destroyer": "https://www.youtube.com/embed/Ogw1efDBu5M"
 };
 
 window.NEWRY_PRODUCTS.forEach(product => {

@@ -7,3 +7,26 @@
 @media(max-width:1050px){.desktop-nav{display:none}.header-actions .text-link{display:none}.hero{grid-template-columns:48% 52%}.occasion-card img{height:290px}.sale-banner>a{grid-template-columns:auto 1fr}.sale-cta{display:none}}
 @media(max-width:760px){.site-header{height:84px;padding:0 20px}.brand strong{font-size:25px}.brand small{font-size:8px}.spark-mark{width:36px;height:36px;flex-basis:36px}.spark-mark:before,.spark-mark:after,.spark-mark i{height:36px}.header-actions{display:none}.mobile-menu{display:block}.sale-banner>a{min-height:auto;padding:17px 20px;grid-template-columns:1fr;gap:12px;text-align:center}.sale-label{justify-self:center}.sale-banner>a>strong{font-size:27px}.sale-details{padding:10px 20px;gap:7px;flex-direction:column;text-align:center;line-height:1.45}.sale-details span+span:before{display:none}.hero{display:flex;flex-direction:column;min-height:auto}.hero-copy{padding:70px 24px 54px;order:2;background:linear-gradient(0deg,#080a0a 80%,transparent)}.hero-image{min-height:500px;order:1;background-image:linear-gradient(0deg,#080a0a 0%,transparent 30%),url('assets/hero-wedding.jpg');background-position:center top}.eyebrow{font-size:10px}h1{font-size:58px}.trust{padding:22px;gap:10px;flex-wrap:wrap;text-align:center}.trust span{font-size:8px}.occasions{padding:65px 20px}.section-heading{display:block}.section-heading h2{margin-top:14px}.occasion-grid{grid-template-columns:1fr;gap:42px}.occasion-card img{height:390px}.wedding,.about{grid-template-columns:1fr;padding:62px 20px;gap:35px}.wedding-copy{padding:0}.wedding>img{height:330px}.about-image-wrap,.about-image-wrap img{height:330px}.about-image-wrap{order:2}.visit{grid-template-columns:1fr;padding:50px 20px;gap:18px}.visit .button{justify-self:start}footer{grid-template-columns:1fr;padding:48px 20px 28px;gap:32px}footer>small{grid-column:auto}.button,.outline-button{padding:0 18px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+.brand-image {
+  min-width: 0;
+}
+
+.brand-logo {
+  width: 190px;
+  height: auto;
+  display: block;
+}
+
+footer .brand-logo {
+  width: 220px;
+}
+
+@media (max-width: 760px) {
+  .brand-logo {
+    width: 145px;
+  }
+
+  footer .brand-logo {
+    width: 190px;
+  }
+}

@@ -157,3 +157,38 @@
     max-height: 60px;
   }
 }
+.stock-alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 22px clamp(20px, 5vw, 70px);
+  background: #f06418;
+  color: #090b0b;
+}
+
+.stock-alert strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.stock-alert span {
+  line-height: 1.5;
+}
+
+.stock-alert a {
+  flex-shrink: 0;
+  padding: 13px 20px;
+  border: 2px solid #090b0b;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .stock-alert {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

@@ -49,10 +49,10 @@ window.NEWRY_PRODUCTS.forEach(product => {
       id: "newry-crackdown",
       name: "Crackdown",
       brand: "Bright Star Fireworks",
-      detail: "138-shot barrage",
-      description: "A 138-shot barrage from Bright Star Fireworks.",
+      detail: "158-shot barrage",
+      description: "A 158-shot barrage from Bright Star Fireworks.",
       image: "assets/4.jpg",
-      price: 220
+      price: 180
     },
     {
       id: "newry-screaming-wild-cats",

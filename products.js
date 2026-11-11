@@ -43,7 +43,7 @@ window.NEWRY_PRODUCTS.forEach(product => {
       detail: "96-shot barrage",
       description: "A 96-shot Pandora’s Box barrage. Follow the instructions and safety distances printed on the product.",
       image: "assets/2.webp",
-      price: 100
+      price: 110
     },
     {
       id: "newry-crackdown",

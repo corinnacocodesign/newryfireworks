@@ -147,6 +147,35 @@ window.NEWRY_PRODUCTS.forEach(product => {
     }
   });
 })();
+const soldOutProducts = new Set([
+  "Neptune",
+  "Jupiter",
+  "Mercury",
+  "Saturn",
+  "Venus",
+  "Alien Invaders",
+  "Strikeforce",
+  "Space Hawk",
+  "Titan",
+  "Star Trooper",
+  "Space Shuttle",
+  "Solar Rockets",
+  "God Of Thunder",
+  "Volcanic Fire",
+  "Hocus Pocus",
+  "Dragon Attack",
+  "Thunderbolts",
+  "Star Fighter",
+  "Death Star",
+  "Power Force",
+  "Neon Blast",
+  "Smoking Aces"
+]);
+
+window.NEWRY_PRODUCTS.forEach(product => {
+  product.soldOut = soldOutProducts.has(product.name);
+});
+
 const productVideos = {
   "Sonic Force": "https://www.youtube.com/embed/fAuKcbBHSpE",
   "Ground Shaker": "https://www.youtube.com/embed/s681sq-n81Y",

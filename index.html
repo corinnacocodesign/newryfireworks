@@ -213,7 +213,7 @@
   </footer>
 </main>
 
-<script src="products.js"></script>
+<script src="products.js?v=20261112b"></script>
 <script>
   const nyeSelections = [
     { name: 'Pandora’s Box', label: 'Best seller' },
@@ -255,11 +255,27 @@
     }).join('');
   }
 
-  const featuredIds = ['20610', '20618', '20057', '20059', '20960', '20130'];
+  const featuredNames = [
+    'Pandora’s Box',
+    'Crackdown',
+    'Alien Invasion',
+    'Angels Tears',
+    'Firestorm',
+    'Hot 8'
+  ];
 
-  const featuredProducts = featuredIds
-    .map(id => (window.NEWRY_PRODUCTS || []).find(product => product.id === id))
+  const allAvailableProducts = (window.NEWRY_PRODUCTS || [])
+    .filter(product => !product.soldOut);
+
+  const preferredProducts = featuredNames
+    .map(name => allAvailableProducts.find(product => product.name === name))
     .filter(Boolean);
+
+  const fallbackProducts = allAvailableProducts
+    .filter(product => !preferredProducts.some(featured => featured.id === product.id))
+    .sort((a, b) => Number(b.price || 0) - Number(a.price || 0));
+
+  const featuredProducts = [...preferredProducts, ...fallbackProducts].slice(0, 6);
 
   const featuredGrid = document.querySelector('[data-featured-products]');
 

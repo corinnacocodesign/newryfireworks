@@ -192,3 +192,146 @@
     flex-direction: column;
   }
 }
+
+
+/* NEW YEAR'S EVE PRODUCT PICKS */
+
+.nye-products {
+  display: block;
+  padding: clamp(70px, 8vw, 110px) clamp(20px, 5vw, 76px);
+  background: #0a0c0c;
+  color: #f4f0e8;
+  border-top: 1px solid #292c2c;
+}
+
+.nye-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(280px, .7fr);
+  align-items: end;
+  gap: 40px;
+  margin-bottom: 42px;
+}
+
+.nye-heading h2 {
+  margin: 10px 0 0;
+  color: #f4f0e8;
+  font-size: clamp(52px, 7vw, 94px);
+  line-height: .92;
+}
+
+.nye-heading h2 span {
+  color: #f06418;
+}
+
+.nye-heading > p {
+  max-width: 480px;
+  margin: 0 0 7px;
+  color: #c7c5bf;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.nye-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.nye-card {
+  min-width: 0;
+  background: #151818;
+  border: 1px solid #292c2c;
+}
+
+.nye-card a {
+  display: block;
+  height: 100%;
+}
+
+.nye-image {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+  background: #eee9df;
+}
+
+.nye-image span {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 1;
+  padding: 9px 11px;
+  background: #0a0c0c;
+  color: #f06418;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.nye-image img {
+  width: 100%;
+  height: 100%;
+  padding: 22px;
+  object-fit: contain;
+  transition: transform .25s ease;
+}
+
+.nye-card:hover .nye-image img {
+  transform: scale(1.035);
+}
+
+.nye-card-copy {
+  padding: 22px;
+}
+
+.nye-card-copy h3 {
+  margin: 0 0 14px;
+  color: #f4f0e8;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nye-card-copy strong {
+  display: block;
+  margin-bottom: 18px;
+  color: #f06418;
+  font-size: 22px;
+}
+
+.nye-card-copy small {
+  color: #d2cec6;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.nye-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+@media (max-width: 900px) {
+  .nye-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .nye-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .nye-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nye-image {
+    height: 310px;
+  }
+}

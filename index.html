@@ -7,7 +7,7 @@
   <title>Newry Fireworks | Border Fireworks in Northern Ireland</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="redesign.css">
+  <link rel="stylesheet" href="redesign.css?v=20261112b">
   <link rel="canonical" href="https://www.newryfireworks.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Newry Fireworks">
@@ -113,6 +113,24 @@
     </iframe>
   </div>
 </section>
+
+  <section class="nye-products" aria-labelledby="nye-title">
+    <div class="nye-heading">
+      <div>
+        <p class="eyebrow">Plan the midnight moment</p>
+        <h2 id="nye-title">New Year’s Eve<br><span>fireworks.</span></h2>
+      </div>
+      <p>Six show-stopping barrages selected for an unforgettable New Year’s Eve celebration.</p>
+    </div>
+
+    <div class="nye-grid" data-nye-products></div>
+
+    <div class="nye-actions">
+      <a class="button" href="shop.html">Shop all fireworks →</a>
+      <a class="outline-button light" href="deals.html">View November deals</a>
+    </div>
+  </section>
+
   <section class="featured-products" aria-labelledby="featured-title">
     <div class="section-heading">
       <div>
@@ -197,6 +215,46 @@
 
 <script src="products.js"></script>
 <script>
+  const nyeSelections = [
+    { name: 'Pandora’s Box', label: 'Best seller' },
+    { name: 'Crackdown', label: 'November deal', price: 140 },
+    { name: 'Alien Invasion', label: 'November deal', price: 350 },
+    { name: 'Sonic Force', label: 'NYE pick' },
+    { name: 'Ground Shaker', label: 'NYE pick' },
+    { name: 'Matrix Madness', label: 'NYE pick' }
+  ];
+
+  const nyeGrid = document.querySelector('[data-nye-products]');
+
+  if (nyeGrid) {
+    nyeGrid.innerHTML = nyeSelections.map(selection => {
+      const product = (window.NEWRY_PRODUCTS || [])
+        .find(item => item.name === selection.name);
+
+      if (!product) return '';
+
+      const displayPrice = Number.isFinite(selection.price)
+        ? selection.price
+        : product.price;
+
+      return `
+        <article class="nye-card">
+          <a href="shop.html" aria-label="View ${product.name} in the shop">
+            <div class="nye-image">
+              <span>${selection.label}</span>
+              <img src="${product.image}" alt="${product.name}" loading="lazy">
+            </div>
+            <div class="nye-card-copy">
+              <h3>${product.name}</h3>
+              <strong>${Number.isFinite(displayPrice) ? `£${displayPrice.toFixed(2)}` : 'Price in store'}</strong>
+              <small>View in shop →</small>
+            </div>
+          </a>
+        </article>
+      `;
+    }).join('');
+  }
+
   const featuredIds = ['20610', '20618', '20057', '20059', '20960', '20130'];
 
   const featuredProducts = featuredIds

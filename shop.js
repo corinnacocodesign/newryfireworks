@@ -14,9 +14,9 @@ function priceLabel(item) {
 
 function render(items) {
   grid.innerHTML = items.map(item => `
-    <article class="product-card">
+    <article class="product-card${item.soldOut ? ' sold-out' : ''}">
       <div class="product-visual has-product-image">
-        <span>In stock</span>
+        <span>${item.soldOut ? 'Sold out' : 'In stock'}</span>
 
         <img
           src="${item.image}"
@@ -54,8 +54,9 @@ ${item.video ? `
   class="draft-add-button"
   type="button"
   data-draft-add="${item.id}"
+  ${item.soldOut ? 'disabled aria-disabled="true"' : ''}
 >
-  Add to draft order
+  ${item.soldOut ? 'Sold out' : 'Add to draft order'}
 </button>
       </div>
     </article>
